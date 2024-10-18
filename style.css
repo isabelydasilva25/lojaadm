@@ -1,0 +1,56 @@
+
+
+header{
+    background-color: rgb(223, 39, 100);
+    text-align: center;
+    align-items: center;
+}
+
+img.logo{
+    width: 320px;
+}
+
+footer{
+    background-color: palevioletred;
+}
+
+main{
+    background-color: pink;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: palevioletred;
+    padding: 10px;
+}
+
+nav a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.caixa_mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    border-radius:10px;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: blue;
+    transition: 2s;
+}
+
+.img_card{
+    width: 210px;
+    heigth: 230px;
+}
