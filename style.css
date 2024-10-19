@@ -1,13 +1,17 @@
+*{
+    margin: 0;
 
+}
 
 header{
-    background-color: rgb(223, 39, 100);
+    background-color: pink;
     text-align: center;
     align-items: center;
 }
 
 img.logo{
-    width: 320px;
+    width: 700px;
+    height: 250px;
 }
 
 footer{
@@ -46,11 +50,38 @@ nav a{
     justify-content: center;
     align-items: center;
     margin: 20px;
-    background-color: blue;
+    background-color: palevioletred;
+    color: white;
     transition: 2s;
 }
 
 .img_card{
     width: 210px;
-    heigth: 230px;
+    height: 200px;
+}
+
+.hero{
+    color: rgb(204, 60, 108);
+}
+
+.conteiner{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    color: rgb(204, 60, 108);
+}
+
+.time{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: rgb(204, 60, 108);
+
+}
+
+.servico{
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+    color: rgb(204, 60, 108);
 }
