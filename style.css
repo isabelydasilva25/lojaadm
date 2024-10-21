@@ -7,19 +7,27 @@ header{
     background-color: pink;
     text-align: center;
     align-items: center;
+    grid-area: cabeca;   
 }
 
 img.logo{
-    width: 700px;
+    width: 650px;
     height: 250px;
 }
 
 footer{
     background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    grid-area: pe;
 }
 
 main{
     background-color: pink;
+    grid-area: meio;
 }
 
 nav{
@@ -62,6 +70,7 @@ nav a{
 
 .hero{
     color: rgb(204, 60, 108);
+    text-align: center;
 }
 
 .conteiner{
@@ -71,17 +80,55 @@ nav a{
     color: rgb(204, 60, 108);
 }
 
-.time{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    color: rgb(204, 60, 108);
-
-}
-
-.servico{
+.Serviços{
     max-width: 1200px;
     margin: auto;
     padding: 15px;
     color: rgb(204, 60, 108);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
+
+
+.img_footer{
+    width: 200px;
+    height: auto;
+}
+.texto_footer{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        grid-template-areas: 
+        "cabeca"
+        "meio"
+        "pe";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+   
+    }
+    
+}
+
+@media only screen and (width-max:400px){
+    body{
+        display: grid;
+        grid-template-areas:
+        "cabe"
+        "prin"
+        "roda";
+        grid-template-columns: auto;
+        grid-template-rows: 200px 880px 200px;
+    }
+
+}
+
