@@ -7,7 +7,7 @@
     --secondary-color: palevioletred;
     --accent-color: rgb(204, 60, 108);
     /* --primary-color-trasparente: rgb(255, 192, 203, 0.7); */
-    --primary-color-trasparente: rgb(255, 255, 255, 0.6);
+    --primary-color-trasparente: rgb(255, 255, 255, 0.8sss);
     --text-color: white;
     --dark-color: #333;
     --btn-color: #6c5b7b;
@@ -25,6 +25,10 @@ header {
     color: var(--text-color); 
     text-align: center; 
 }
+.logo_pri{
+    width: 100%;
+    height: auto;
+}
 
 nav {
     display: flex; 
@@ -40,14 +44,15 @@ nav a {
 }
 
 .hero {
-    background-image: url(img/logo.png); /* Imagem de fundo para a seção hero */
+    background-image: url(img/fundo_logo.png); /* Imagem de fundo para a seção hero */
     background-size: cover; 
-    height: 450px; 
-    display: flex; 
+    height: 20%; 
+    display: flex none; 
     align-items: center; 
     justify-content: center; 
     color: var(--text-color); 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    
 }
 main{
     background-image: url(img/fundo.jpg);
@@ -73,7 +78,7 @@ main{
     margin: 20px 0; 
     padding: 20px; 
     border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -196,7 +201,10 @@ footer {
 }
 
 .social-icons {
+    margin-top: 10px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 15px;
 }
 
@@ -233,3 +241,8 @@ footer p {
     text-align: center;
 }
 
+
+
+@media screen {
+    
+}
