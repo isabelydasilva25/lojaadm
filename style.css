@@ -1,247 +1,240 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
 }
 :root {
-    --primary-color: pink;
-    --secondary-color: palevioletred;
-    --accent-color: rgb(204, 60, 108);
-    /* --primary-color-trasparente: rgb(255, 192, 203, 0.7); */
-    --primary-color-trasparente: rgb(255, 255, 255, 0.8sss);
-    --text-color: white;
-    --dark-color: #333;
-    --btn-color: #6c5b7b;
+    /* Definição de variáveis de cores */
+    --primary-color: pink; /* Cor principal */
+    --secondary-color: palevioletred; /* Cor secundária */
+    --accent-color: rgb(204, 60, 108); /* Cor de destaque */
+    --primary-color-trasparente: rgb(255, 255, 255, 0.8); /* Cor primária com transparência */
+    --text-color: white; /* Cor do texto */
+    --dark-color: #333; /* Cor escura de fundo */
+    --btn-color: #6c5b7b; /* Cor dos botões */
 }
 
 body { 
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif; /* Define a fonte do corpo da página */
     margin: 0; 
     padding: 0; 
-    background-color: var(--dark-color); 
+    background-color: var(--dark-color); /* Cor de fundo da página */
 }
 
 header {
-    background-color: var(--primary-color); 
-    color: var(--text-color); 
-    text-align: center; 
+    background-color: var(--primary-color); /* Cor de fundo do cabeçalho */
+    color: var(--text-color); /* Cor do texto no cabeçalho */
+    text-align: center; /* Alinhamento centralizado do texto */
 }
-.logo_pri{
-    width: 100%;
-    height: auto;
+
+.logo_pri {
+    width: 100%; /* Logo ocupa a largura total */
+    height: auto; /* Altura ajustável para manter a proporção */
 }
 
 nav {
-    display: flex; 
-    justify-content: center; 
-    background-color: var(--accent-color); 
-    padding: 10px; 
+    display: flex; /* Exibe o conteúdo de navegação em linha */
+    justify-content: center; /* Centraliza os itens de navegação */
+    background-color: var(--accent-color); /* Cor de fundo da barra de navegação */
+    padding: 10px; /* Espaçamento interno */
 }
 
 nav a {
-    color: var(--text-color); 
-    margin: 0 15px; 
-    text-decoration: none; 
+    color: var(--text-color); /* Cor dos links de navegação */
+    margin: 0 15px; /* Espaçamento entre links */
+    text-decoration: none; /* Remove o sublinhado dos links */
 }
 
 .hero {
     background-image: url(img/fundo_logo.png); /* Imagem de fundo para a seção hero */
-    background-size: cover; 
-    height: 20%; 
-    display: flex none; 
-    align-items: center; 
-    justify-content: center; 
-    color: var(--text-color); 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    
+    background-size: cover; /* Cobre toda a área do elemento */
+    height: 20%; /* Altura da seção hero */
+    display: flex; 
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    color: var(--text-color); /* Cor do texto na seção hero */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto */
 }
-main{
-    background-image: url(img/fundo.jpg);
+
+main {
+    background-image: url(img/fundo.jpg); /* Imagem de fundo para o main */
     margin: 0;
     padding: 0;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: cover; /* Cobre toda a área do main */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
 }
+
 .hero h1 {
-    font-size: 48px;
+    font-size: 48px; /* Tamanho da fonte do título principal */
     margin: 0;
 }
 
 .container {
-    width: 90%; 
-    max-width: 1200px; 
-    margin: auto; 
+    width: 90%; /* Largura de 90% da página */
+    max-width: 1200px; /* Largura máxima de 1200px */
+    margin: auto; /* Centraliza o container */
     padding: 20px;
 }
 
 .section {
-    background-color: white; 
-    margin: 20px 0; 
-    padding: 20px; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: white; /* Fundo branco para seções */
+    margin: 20px 0; /* Margem vertical entre seções */
+    padding: 20px; /* Preenchimento interno da seção */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra ao redor da seção */
 }
 
-
 .produtos {
-    display: flex; 
-    justify-content: space-around; 
-    flex-wrap: wrap;
+    display: flex; /* Exibe os produtos em linha */
+    justify-content: space-around; /* Espaço igual ao redor dos produtos */
+    flex-wrap: wrap; /* Permite a quebra de linha dos produtos */
 }
 
 .produto {
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color); /* Cor de fundo do card do produto */
     padding: 20px; 
-    border-radius: 5px; 
-    width: 220px; /* Controla a largura dos cards */
-    height: 450px;
-    margin: 10px;
-    text-align: center;
-    position: relative;
+    border-radius: 5px; /* Borda arredondada */
+    width: 220px; /* Largura fixa do card */
+    height: 450px; /* Altura fixa do card */
+    margin: 10px; /* Margem ao redor do card */
+    text-align: center; /* Alinhamento central do texto */
+    position: relative; /* Permite posicionar elementos internos */
 }
+
 .preco {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Tamanho da fonte do preço */
 }
 
 .detalhes-btn {
-    background-color: #9b0d20;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: #9b0d20; /* Cor de fundo do botão de detalhes */
+    color: white; /* Cor do texto no botão */
+    padding: 10px; 
+    border: none; /* Remove borda */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    border-radius: 5px; /* Borda arredondada */
 }
-
 
 .servicos {
     display: flex; 
     justify-content: space-around; 
     flex-wrap: wrap;
 }
+
 .servico {
-    background-color: var(--secondary-color); 
-    color: var(--text-color);
+    background-color: var(--secondary-color); /* Fundo para o card de serviços */
+    color: var(--text-color); /* Cor do texto do serviço */
     padding: 20px; 
     border-radius: 5px; 
-    width: 30%; 
+    width: 30%; /* Largura de cada serviço */
     margin: 10px;
     text-align: center;
 }
-.texto_produto{
-    position: absolute;
-    bottom: 20px;
-    width: 220px;
+
+.texto_produto {
+    position: absolute; /* Posiciona o texto no card */
+    bottom: 20px; /* Define o afastamento da parte inferior */
+    width: 220px; /* Largura do texto */
     color: var(--text-color);
 }
 
 .product-image {
-    width: 100%; /* Faz as imagens ocuparem toda a largura do card */
+    width: 100%; /* Imagem ocupa toda a largura do card */
     height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px;
+    border-radius: 10px; /* Borda arredondada na imagem */
 }
 
-#if_insta{
+#if_insta {
     display: flex;
     justify-content: center;
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    padding: 20px 0;
-    text-align: center;
+    background-color: var(--secondary-color); /* Cor de fundo do rodapé */
+    color: var(--text-color); /* Cor do texto do rodapé */
+    padding: 20px 0; /* Espaçamento interno no rodapé */
+    text-align: center; /* Alinha o texto no centro */
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 100%; /* O rodapé ocupa a largura total da página */
 }
 
 .footer-container {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
+    justify-content: space-between; /* Espaço igual entre as colunas */
+    max-width: 1200px; 
+    margin: auto; 
     padding: 20px;
 }
 
-/* .footer-lists {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-} */
-
 .footer-column {
-    text-align: left;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 .footer-column h3 {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Margem inferior no título da coluna */
 }
 
 .footer-column ul {
-    list-style: none;
+    list-style: none; /* Remove marcadores da lista */
     padding: 0;
 }
 
 .footer-column li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Espaçamento entre itens da lista */
 }
 
 .footer-column a {
-    color: var(--text-color);
-    text-decoration: none;
+    color: var(--text-color); /* Cor dos links no rodapé */
+    text-decoration: none; /* Remove sublinhado */
 }
 
 .footer-column a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 .footer-social {
-    width: 30%;
+    width: 30%; /* Largura da coluna de redes sociais */
     text-align: left;
 }
 
 .social-icons {
     margin-top: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Coloca os ícones em coluna */
     justify-content: center;
-    gap: 15px;
+    gap: 15px; /* Espaçamento entre os ícones */
 }
 
 .social-icons img {
-    width: 30px;
+    width: 30px; /* Largura dos ícones de redes sociais */
     height: auto;
 }
 
 footer p {
     margin-top: 20px;
     font-size: 14px;
-    color: var(--text-color);
-}
-#footer-logo{
-    height: 150px;
+    color: var(--text-color); /* Cor do texto de direitos autorais */
 }
 
-
-
-#sobre, #produtos, #contato, #servicos, #localizacao{
-    background-color: var(--primary-color-trasparente);
+#footer-logo {
+    height: 150px; /* Altura do logo no rodapé */
 }
-/* Localização */
+
+#sobre, #produtos, #contato, #servicos, #localizacao {
+    background-color: var(--primary-color-trasparente); /* Fundo com cor transparente para seções */
+}
+
 #localizacao {
-    padding: 50px;
-
+    padding: 50px; /* Preenchimento interno para a seção de localização */
 }
 
 .locmaps {
-    width: 100%;
-    height: 300px;
+    width: 100%; /* Mapa ocupa a largura total */
+    height: 300px; /* Altura fixa do mapa */
     border: 0;
     margin: 20px 0;
     text-align: center;
 }
-
-
 
 @media screen {
     
