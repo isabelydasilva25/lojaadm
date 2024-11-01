@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(243, 240, 240);
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 5%;
+    height: 80px;
+}
+
+.conteudo{
+    /* 100vh=uma "tela do site inteira", e o calc é para calcular o que vai ser tirado do valor maior(100vh) */
+    height: calc(100vh - 80px);
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.left h1{
+    font-size: 50px;
+    color: #f1688b;
+}
+.left p{
+    color: #f1688b;
+    margin-bottom: 60px;
+    margin-right: 600px;
+}
+.left span{
+    font-size: 30px;
+    font-weight: 500;
+    color:#f1688b;
+}
+.left a{
+    text-decoration: none;
+    color: white;
+    background-color: #9b0d20;
+    /* fit content é para a largura se adaptar ao conteudo */
+    width: fit-content;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+.right{
+    background-color: #ff8ca8;
+    padding: 20px;
+    border-radius: 15px;
+    height: 500px;
+    width: 1000px;
+}
+.right img{
+    border-radius: 10px;
+    width: 600px;
+    height: 460px;
+}
